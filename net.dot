@@ -1,0 +1,947 @@
+strict digraph  {
+	"Su, Mama,
+ 1.52" -> "Su, Kelebek,
+ 1.88"	 [weight="0.930050655458"];
+	"Su, Mama,
+ 1.52" -> "Su, Bebek,
+ 0.44"	 [weight="1.01991581235"];
+	"Su, Mama,
+ 1.52" -> "Su, Bebek,
+ 4.2"	 [weight="0.8634533596"];
+	"Su, Mama,
+ 1.52" -> "Su, Mama,
+ 1.74"	 [weight="0.837152288049"];
+	"Su, Mama,
+ 1.52" -> "Su, Bebek,
+ 3.14"	 [weight="0.921685569082"];
+	"Su, Mama,
+ 1.52" -> "Su, Araba,
+ 2.49"	 [weight="0.847447147986"];
+	"Su, Mama,
+ 1.52" -> "Su, Araba,
+ 2.41"	 [weight="0.96955746912"];
+	"Su, Araba,
+ 1.84" -> "Su, Baba,
+ 0.45"	 [weight="0.664151055514"];
+	"Su, Araba,
+ 1.84" -> "Su, Su,
+ 1.15"	 [weight="0.598794720927"];
+	"Su, Araba,
+ 1.84" -> "Su, Su,
+ 0.81"	 [weight="0.873505180652"];
+	"Su, Araba,
+ 1.84" -> "Su, Bebek,
+ 2.65"	 [weight="0.569229231581"];
+	"Su, Su,
+ 3.04" -> "Su, Anne,
+ 1.98"	 [weight="1.80639745873"];
+	"Su, Su,
+ 3.04" -> "Su, Kelebek,
+ 3.12"	 [weight="1.06254323526"];
+	"Su, Su,
+ 3.04" -> "Su, Su,
+ 1.32"	 [weight="1.66022295337"];
+	"Su, Su,
+ 3.04" -> "Su, Araba,
+ 1.81"	 [weight="2.11067274461"];
+	"Su, Su,
+ 3.04" -> "Su, Kitap,
+ 2.28"	 [weight="1.06992229094"];
+	"Su, Su,
+ 3.04" -> "Su, Mama,
+ 0.76"	 [weight="0.812733043616"];
+	"Su, Su,
+ 3.04" -> "Su, Su,
+ 2.36"	 [weight="1.57824944505"];
+	"Su, Su,
+ 3.04" -> "Su, Mama,
+ 3.9"	 [weight="1.23225801698"];
+	"Su, Su,
+ 3.04" -> "Su, Su,
+ 1.15"	 [weight="1.79562364375"];
+	"Su, Su,
+ 3.04" -> "Su, Mama,
+ 1.74"	 [weight="1.92892639453"];
+	"Su, Su,
+ 3.04" -> "Su, Araba,
+ 3.22"	 [weight="0.877310890213"];
+	"Su, Su,
+ 3.04" -> "Su, Mama,
+ 2.9"	 [weight="1.15403298922"];
+	"Su, Su,
+ 3.04" -> "Su, Anne,
+ 0.94"	 [weight="1.09488717569"];
+	"Su, Su,
+ 3.04" -> "Su, Anne,
+ 2.46"	 [weight="2.13811164746"];
+	"Su, Su,
+ 3.04" -> "Su, Baba,
+ 2.26"	 [weight="2.6692512959"];
+	"Su, Su,
+ 3.04" -> "Su, Bebek,
+ 2.65"	 [weight="2.27437236674"];
+	"Su, Kelebek,
+ 0.26" -> "Su, Kelebek,
+ 2.57"	 [weight="0.221231821315"];
+	"Su, Kelebek,
+ 2.57" -> "Su, Su,
+ 1.32"	 [weight="1.41715666883"];
+	"Su, Kelebek,
+ 2.57" -> "Su, Kitap,
+ 2.28"	 [weight="0.556029360132"];
+	"Su, Kelebek,
+ 2.57" -> "Su, Bebek,
+ 3.14"	 [weight="0.218899546623"];
+	"Su, Kelebek,
+ 2.57" -> "Su, Su,
+ 1.69"	 [weight="1.64423971382"];
+	"Su, Mama,
+ 1.98" -> "Su, Kitap,
+ 2.28"	 [weight="1.04208001794"];
+	"Su, Mama,
+ 1.98" -> "Su, Mama,
+ 1.71"	 [weight="0.560231052794"];
+	"Su, Mama,
+ 1.98" -> "Su, Mama,
+ 1.74"	 [weight="1.26892174299"];
+	"Su, Mama,
+ 1.98" -> "Su, Kelebek,
+ 1.74"	 [weight="1.82584681701"];
+	"Su, Mama,
+ 1.98" -> "Su, Araba,
+ 2.49"	 [weight="0.689508000188"];
+	"Su, Mama,
+ 1.98" -> "Su, Anne,
+ 0.55"	 [weight="0.963528843421"];
+	"Su, Kelebek,
+ 1.88" -> "Su, Bebek,
+ 0.44"	 [weight="0.775703812357"];
+	"Su, Kelebek,
+ 1.88" -> "Su, Su,
+ 1.32"	 [weight="0.865275490137"];
+	"Su, Kelebek,
+ 1.88" -> "Su, Baba,
+ 0.45"	 [weight="0.815993490973"];
+	"Su, Kelebek,
+ 1.88" -> "Su, Kelebek,
+ 1.62"	 [weight="0.743447744995"];
+	"Su, Kelebek,
+ 1.88" -> "Su, Su,
+ 2.95"	 [weight="1.02810215071"];
+	"Su, Kelebek,
+ 1.88" -> "Su, Anne,
+ 0.55"	 [weight="0.765544456591"];
+	"Su, Kelebek,
+ 1.88" -> "Su, Bebek,
+ 2.65"	 [weight="0.75671484835"];
+	"Su, Bebek,
+ 1.78" -> "Su, Kelebek,
+ 1.62"	 [weight="0.825795002207"];
+	"Su, Bebek,
+ 1.78" -> "Su, Bebek,
+ 3.14"	 [weight="0.283248983693"];
+	"Su, Bebek,
+ 1.78" -> "Su, Anne,
+ 0.55"	 [weight="0.810827074821"];
+	"Su, Araba,
+ 3.22" -> "Su, Anne,
+ 1.98"	 [weight="1.93978538875"];
+	"Su, Araba,
+ 3.22" -> "Su, Su,
+ 1.32"	 [weight="1.71182253804"];
+	"Su, Araba,
+ 3.22" -> "Su, Mama,
+ 1.98"	 [weight="0.898237441018"];
+	"Su, Araba,
+ 3.22" -> "Su, Mama,
+ 0.76"	 [weight="1.59679448294"];
+	"Su, Araba,
+ 3.22" -> "Su, Su,
+ 2.95"	 [weight="2.80517793914"];
+	"Su, Araba,
+ 3.22" -> "Su, Bebek,
+ 1.78"	 [weight="0.853886967367"];
+	"Su, Araba,
+ 3.22" -> "Su, Su,
+ 2.42"	 [weight="1.14402693584"];
+	"Su, Araba,
+ 3.22" -> "Su, Araba,
+ 2.27"	 [weight="1.62368118266"];
+	"Su, Araba,
+ 3.22" -> "Su, Araba,
+ 2.41"	 [weight="1.73222002319"];
+	"Su, Araba,
+ 3.22" -> "Su, Su,
+ 3.04"	 [weight="1.31010551823"];
+	"Su, Araba,
+ 3.22" -> "Su, Su,
+ 1.69"	 [weight="1.68695586381"];
+	"Su, Mama,
+ 2.9" -> "Su, Su,
+ 1.32"	 [weight="0.455307768453"];
+	"Su, Mama,
+ 2.9" -> "Su, Kitap,
+ 2.28"	 [weight="1.7203455302"];
+	"Su, Mama,
+ 2.9" -> "Su, Mama,
+ 2.89"	 [weight="1.73354365327"];
+	"Su, Mama,
+ 2.9" -> "Su, Mama,
+ 1.86"	 [weight="2.17646582928"];
+	"Su, Mama,
+ 2.9" -> "Su, Bebek,
+ 1.78"	 [weight="0.993891328266"];
+	"Su, Mama,
+ 2.9" -> "Su, Su,
+ 2.42"	 [weight="1.83417469965"];
+	"Su, Mama,
+ 2.9" -> "Su, Kitap,
+ 3.64"	 [weight="1.40411816928"];
+	"Su, Mama,
+ 2.9" -> "Su, Araba,
+ 2.87"	 [weight="2.50074580466"];
+	"Su, Mama,
+ 2.9" -> "Su, Araba,
+ 1.33"	 [weight="1.82358306721"];
+	"Su, Kitap,
+ 3.64" -> "Su, Kelebek,
+ 3.12"	 [weight="0.543770154559"];
+	"Su, Kitap,
+ 3.64" -> "Su, Kitap,
+ 2.28"	 [weight="0.194097561479"];
+	"Su, Kitap,
+ 3.64" -> "Su, Mama,
+ 1.71"	 [weight="1.13604813634"];
+	"Su, Kitap,
+ 3.64" -> "Su, Mama,
+ 1.98"	 [weight="1.0683953173"];
+	"Su, Kitap,
+ 3.64" -> "Su, Araba,
+ 1.69"	 [weight="0.995667581971"];
+	"Su, Kitap,
+ 3.64" -> "Su, Mama,
+ 0.76"	 [weight="1.19505392383"];
+	"Su, Kitap,
+ 3.64" -> "Su, Bebek,
+ 4.2"	 [weight="2.94681732642"];
+	"Su, Kitap,
+ 3.64" -> "Su, Anne,
+ 0.94"	 [weight="1.12388725028"];
+	"Su, Kitap,
+ 3.64" -> "Su, Su,
+ 0.81"	 [weight="1.19792841199"];
+	"Su, Kitap,
+ 3.64" -> "Su, Su,
+ 1.69"	 [weight="2.29064630442"];
+	"Su, Su,
+ 1.15" -> "Su, Anne,
+ 1.98"	 [weight="1.01544260176"];
+	"Su, Su,
+ 1.15" -> "Su, Mama,
+ 2.89"	 [weight="0.965305123298"];
+	"Su, Su,
+ 1.15" -> "Su, Anne,
+ 0.55"	 [weight="1.1594103423"];
+	"Su, Araba,
+ 2.87" -> "Su, Kelebek,
+ 3.12"	 [weight="2.32482679307"];
+	"Su, Araba,
+ 2.87" -> "Su, Araba,
+ 1.81"	 [weight="0.60821016465"];
+	"Su, Araba,
+ 2.87" -> "Su, Bebek,
+ 1.78"	 [weight="0.205403540867"];
+	"Su, Araba,
+ 2.87" -> "Su, Kelebek,
+ 1.74"	 [weight="0.604694740307"];
+	"Su, Araba,
+ 2.87" -> "Su, Baba,
+ 1.29"	 [weight="0.551293088049"];
+	"Su, Araba,
+ 2.87" -> "Su, Su,
+ 1.69"	 [weight="0.21275975088"];
+	"Su, Anne,
+ 2.46" -> "Su, Kelebek,
+ 1.88"	 [weight="2.14779709901"];
+	"Su, Anne,
+ 2.46" -> "Su, Su,
+ 1.32"	 [weight="0.89134523337"];
+	"Su, Anne,
+ 2.46" -> "Su, Mama,
+ 1.71"	 [weight="0.950201202737"];
+	"Su, Anne,
+ 2.46" -> "Su, Mama,
+ 2.89"	 [weight="1.16601836653"];
+	"Su, Anne,
+ 2.46" -> "Su, Mama,
+ 3.9"	 [weight="0.983302213539"];
+	"Su, Anne,
+ 2.46" -> "Su, Kelebek,
+ 1.62"	 [weight="1.43258673193"];
+	"Su, Anne,
+ 2.46" -> "Su, Mama,
+ 2.9"	 [weight="0.903285018352"];
+	"Su, Anne,
+ 2.46" -> "Su, Araba,
+ 2.49"	 [weight="1.73027323336"];
+	"Su, Baba,
+ 2.26" -> "Su, Baba,
+ 0.45"	 [weight="0.400850530927"];
+	"Su, Baba,
+ 2.26" -> "Su, Anne,
+ 0.94"	 [weight="0.404472061212"];
+	"Su, Baba,
+ 2.26" -> "Su, Su,
+ 0.81"	 [weight="0.395077076532"];
+	"Su, Su,
+ 2.42" -> "Su, Bebek,
+ 1.31"	 [weight="1.04939325314"];
+	"Su, Su,
+ 2.42" -> "Su, Kitap,
+ 2.28"	 [weight="0.9918407091"];
+	"Su, Su,
+ 2.42" -> "Su, Mama,
+ 1.52"	 [weight="1.03927109348"];
+	"Su, Su,
+ 2.42" -> "Su, Kelebek,
+ 2.57"	 [weight="1.45749695541"];
+	"Su, Su,
+ 2.42" -> "Su, Kitap,
+ 3.64"	 [weight="2.00349439792"];
+	"Su, Su,
+ 2.42" -> "Su, Bebek,
+ 3.14"	 [weight="1.91328097585"];
+	"Su, Su,
+ 2.42" -> "Su, Kelebek,
+ 1.74"	 [weight="0.674093248141"];
+	"Su, Su,
+ 2.42" -> "Su, Araba,
+ 2.49"	 [weight="1.38553304324"];
+	"Su, Araba,
+ 1.69" -> "Su, Anne,
+ 1.98"	 [weight="1.02854492334"];
+	"Su, Araba,
+ 1.69" -> "Su, Su,
+ 1.32"	 [weight="1.01889337314"];
+	"Su, Araba,
+ 1.69" -> "Su, Baba,
+ 0.45"	 [weight="1.04217859899"];
+	"Su, Araba,
+ 1.69" -> "Su, Mama,
+ 0.76"	 [weight="0.968585512842"];
+	"Su, Araba,
+ 1.69" -> "Su, Kelebek,
+ 1.74"	 [weight="0.832094236947"];
+	"Su, Araba,
+ 1.69" -> "Su, Baba,
+ 1.29"	 [weight="0.789734958785"];
+	"Su, Araba,
+ 1.69" -> "Su, Su,
+ 0.81"	 [weight="1.09630884838"];
+	"Su, Bebek,
+ 4.2" -> "Su, Anne,
+ 1.98"	 [weight="0.619062285881"];
+	"Su, Bebek,
+ 4.2" -> "Su, Mama,
+ 1.86"	 [weight="0.607908528073"];
+	"Su, Bebek,
+ 4.2" -> "Su, Araba,
+ 0.76"	 [weight="0.598912015296"];
+	"Su, Bebek,
+ 4.2" -> "Su, Kelebek,
+ 2.57"	 [weight="1.34105199778"];
+	"Su, Bebek,
+ 4.2" -> "Su, Bebek,
+ 3.14"	 [weight="3.68001755132"];
+	"Su, Bebek,
+ 4.2" -> "Su, Kelebek,
+ 1.74"	 [weight="0.569340734541"];
+	"Su, Bebek,
+ 4.2" -> "Su, Araba,
+ 2.49"	 [weight="1.87340625249"];
+	"Su, Bebek,
+ 4.2" -> "Su, Baba,
+ 1.29"	 [weight="0.641923245084"];
+	"Su, Bebek,
+ 4.2" -> "Su, Su,
+ 1.69"	 [weight="0.541229535773"];
+	"Su, Bebek,
+ 4.2" -> "Su, Bebek,
+ 2.65"	 [weight="1.59561521411"];
+	"Su, Mama,
+ 1.74" -> "Su, Bebek,
+ 1.31"	 [weight="1.5198942921"];
+	"Su, Mama,
+ 1.74" -> "Su, Kelebek,
+ 1.88"	 [weight="0.880200932771"];
+	"Su, Mama,
+ 1.74" -> "Su, Araba,
+ 1.84"	 [weight="0.763620688669"];
+	"Su, Mama,
+ 1.74" -> "Su, Anne,
+ 1.98"	 [weight="0.74148232292"];
+	"Su, Mama,
+ 1.74" -> "Su, Araba,
+ 1.81"	 [weight="0.748183206142"];
+	"Su, Mama,
+ 1.74" -> "Su, Bebek,
+ 3.14"	 [weight="0.986033050313"];
+	"Su, Mama,
+ 1.74" -> "Su, Kelebek,
+ 1.74"	 [weight="0.982044300959"];
+	"Su, Mama,
+ 1.74" -> "Su, Araba,
+ 2.87"	 [weight="1.37126892358"];
+	"Su, Kelebek,
+ 1.62" -> "Su, Mama,
+ 1.98"	 [weight="1.01364938658"];
+	"Su, Kelebek,
+ 1.62" -> "Su, Mama,
+ 3.9"	 [weight="0.723563118106"];
+	"Su, Kelebek,
+ 1.62" -> "Su, Kelebek,
+ 0.26"	 [weight="0.629814170074"];
+	"Su, Kelebek,
+ 1.62" -> "Su, Mama,
+ 1.86"	 [weight="0.687837189149"];
+	"Su, Kelebek,
+ 1.62" -> "Su, Su,
+ 1.15"	 [weight="0.760938481451"];
+	"Su, Kelebek,
+ 1.62" -> "Su, Araba,
+ 0.76"	 [weight="0.737990414557"];
+	"Su, Kelebek,
+ 1.62" -> "Su, Anne,
+ 0.55"	 [weight="0.653875227935"];
+	"Su, Kelebek,
+ 1.62" -> "Su, Baba,
+ 1.29"	 [weight="1.25259277395"];
+	"Su, Kelebek,
+ 1.62" -> "Su, Su,
+ 1.69"	 [weight="0.800461255964"];
+	"Su, Mama,
+ 1.86" -> "Su, Mama,
+ 0.76"	 [weight="0.398213271212"];
+	"Su, Mama,
+ 1.86" -> "Su, Mama,
+ 2.89"	 [weight="0.406893977952"];
+	"Su, Mama,
+ 1.86" -> "Su, Su,
+ 1.15"	 [weight="0.378551490946"];
+	"Su, Mama,
+ 1.86" -> "Su, Baba,
+ 1.29"	 [weight="1.65921641376"];
+	"Su, Mama,
+ 1.86" -> "Su, Bebek,
+ 2.65"	 [weight="0.410245334372"];
+	"Su, Baba,
+ 0.45" -> "Su, Mama,
+ 0.76"	 [weight="0.210146349741"];
+	"Su, Baba,
+ 0.45" -> "Su, Kelebek,
+ 0.26"	 [weight="0.503881315495"];
+	"Su, Baba,
+ 0.45" -> "Su, Kelebek,
+ 2.57"	 [weight="0.221061248906"];
+	"Su, Baba,
+ 0.45" -> "Su, Bebek,
+ 3.14"	 [weight="0.52950643409"];
+	"Su, Baba,
+ 0.45" -> "Su, Kelebek,
+ 1.74"	 [weight="0.541121278232"];
+	"Su, Mama,
+ 3.9" -> "Su, Baba,
+ 3.64"	 [weight="3.16148050108"];
+	"Su, Mama,
+ 3.9" -> "Su, Araba,
+ 1.81"	 [weight="1.70145336815"];
+	"Su, Mama,
+ 3.9" -> "Su, Mama,
+ 1.71"	 [weight="2.93247678423"];
+	"Su, Mama,
+ 3.9" -> "Su, Mama,
+ 1.98"	 [weight="2.0073012632"];
+	"Su, Mama,
+ 3.9" -> "Su, Baba,
+ 0.45"	 [weight="0.496580565624"];
+	"Su, Mama,
+ 3.9" -> "Su, Mama,
+ 1.52"	 [weight="2.31883573407"];
+	"Su, Mama,
+ 3.9" -> "Su, Kelebek,
+ 1.62"	 [weight="0.980287184603"];
+	"Su, Mama,
+ 3.9" -> "Su, Bebek,
+ 4.2"	 [weight="1.16112897059"];
+	"Su, Mama,
+ 3.9" -> "Su, Bebek,
+ 1.78"	 [weight="3.70058495054"];
+	"Su, Mama,
+ 3.9" -> "Su, Araba,
+ 3.22"	 [weight="2.41446209846"];
+	"Su, Mama,
+ 3.9" -> "Su, Araba,
+ 2.87"	 [weight="2.53986808516"];
+	"Su, Mama,
+ 3.9" -> "Su, Anne,
+ 0.94"	 [weight="0.499951564327"];
+	"Su, Mama,
+ 3.9" -> "Su, Anne,
+ 0.55"	 [weight="0.680854694538"];
+	"Su, Mama,
+ 3.9" -> "Su, Baba,
+ 1.29"	 [weight="0.686620393948"];
+	"Su, Mama,
+ 3.9" -> "Su, Bebek,
+ 2.65"	 [weight="0.615280142729"];
+	"Su, Mama,
+ 3.12" -> "Su, Mama,
+ 1.71"	 [weight="0.635559416325"];
+	"Su, Mama,
+ 3.12" -> "Su, Baba,
+ 0.45"	 [weight="1.53347303325"];
+	"Su, Mama,
+ 3.12" -> "Su, Su,
+ 2.36"	 [weight="0.621015380436"];
+	"Su, Mama,
+ 3.12" -> "Su, Mama,
+ 3.9"	 [weight="1.92800443593"];
+	"Su, Mama,
+ 3.12" -> "Su, Bebek,
+ 4.2"	 [weight="1.80108571203"];
+	"Su, Mama,
+ 3.12" -> "Su, Su,
+ 2.95"	 [weight="0.735896781047"];
+	"Su, Mama,
+ 3.12" -> "Su, Mama,
+ 2.9"	 [weight="1.45775780223"];
+	"Su, Mama,
+ 3.12" -> "Su, Araba,
+ 2.27"	 [weight="1.27458600156"];
+	"Su, Mama,
+ 3.12" -> "Su, Araba,
+ 2.87"	 [weight="1.1169479595"];
+	"Su, Mama,
+ 3.12" -> "Su, Su,
+ 0.81"	 [weight="0.774118901825"];
+	"Su, Mama,
+ 3.12" -> "Su, Baba,
+ 2.26"	 [weight="1.18461603023"];
+	"Su, Mama,
+ 3.12" -> "Su, Bebek,
+ 2.65"	 [weight="0.89690595311"];
+	"Su, Bebek,
+ 1.31" -> "Su, Mama,
+ 3.9"	 [weight="0.448037857413"];
+	"Su, Bebek,
+ 1.31" -> "Su, Kelebek,
+ 0.26"	 [weight="0.425915988203"];
+	"Su, Bebek,
+ 1.31" -> "Su, Kelebek,
+ 1.74"	 [weight="0.45771176565"];
+	"Su, Bebek,
+ 1.31" -> "Su, Araba,
+ 2.87"	 [weight="0.378904608948"];
+	"Su, Bebek,
+ 1.31" -> "Su, Su,
+ 1.69"	 [weight="0.425895740918"];
+	"Su, Baba,
+ 3.64" -> "Su, Araba,
+ 1.84"	 [weight="1.62015557866"];
+	"Su, Baba,
+ 3.64" -> "Su, Kitap,
+ 2.28"	 [weight="1.31503376662"];
+	"Su, Baba,
+ 3.64" -> "Su, Mama,
+ 1.98"	 [weight="0.522580564712"];
+	"Su, Baba,
+ 3.64" -> "Su, Mama,
+ 3.12"	 [weight="3.08156403547"];
+	"Su, Baba,
+ 3.64" -> "Su, Araba,
+ 0.76"	 [weight="0.744292813919"];
+	"Su, Baba,
+ 3.64" -> "Su, Kelebek,
+ 1.74"	 [weight="0.604511098453"];
+	"Su, Baba,
+ 3.64" -> "Su, Araba,
+ 2.49"	 [weight="0.631403335469"];
+	"Su, Baba,
+ 3.64" -> "Su, Baba,
+ 1.29"	 [weight="0.782951020559"];
+	"Su, Baba,
+ 3.64" -> "Su, Araba,
+ 1.33"	 [weight="1.95794647866"];
+	"Su, Mama,
+ 1.71" -> "Su, Bebek,
+ 1.31"	 [weight="0.511700662544"];
+	"Su, Mama,
+ 1.71" -> "Su, Baba,
+ 3.64"	 [weight="0.689484789625"];
+	"Su, Mama,
+ 1.71" -> "Su, Kelebek,
+ 2.57"	 [weight="0.538278146003"];
+	"Su, Mama,
+ 1.71" -> "Su, Kelebek,
+ 1.74"	 [weight="0.833150630367"];
+	"Su, Mama,
+ 1.71" -> "Su, Su,
+ 0.81"	 [weight="0.458338261074"];
+	"Su, Mama,
+ 1.71" -> "Su, Baba,
+ 2.26"	 [weight="0.611977841454"];
+	"Su, Mama,
+ 1.71" -> "Su, Su,
+ 1.69"	 [weight="0.931367658499"];
+	"Su, Su,
+ 2.95" -> "Su, Anne,
+ 1.98"	 [weight="0.868263176526"];
+	"Su, Su,
+ 2.95" -> "Su, Mama,
+ 1.71"	 [weight="1.73488270126"];
+	"Su, Su,
+ 2.95" -> "Su, Baba,
+ 0.45"	 [weight="0.856574059931"];
+	"Su, Su,
+ 2.95" -> "Su, Mama,
+ 1.86"	 [weight="0.677487640499"];
+	"Su, Su,
+ 2.95" -> "Su, Araba,
+ 0.76"	 [weight="0.712676018933"];
+	"Su, Su,
+ 2.95" -> "Su, Anne,
+ 0.94"	 [weight="2.45359378192"];
+	"Su, Su,
+ 2.95" -> "Su, Araba,
+ 2.41"	 [weight="2.53149107573"];
+	"Su, Bebek,
+ 2.65" -> "Su, Araba,
+ 1.84"	 [weight="0.72664573581"];
+	"Su, Bebek,
+ 2.65" -> "Su, Kitap,
+ 2.28"	 [weight="2.24682854062"];
+	"Su, Bebek,
+ 2.65" -> "Su, Mama,
+ 1.86"	 [weight="0.889432499739"];
+	"Su, Bebek,
+ 2.65" -> "Su, Araba,
+ 0.76"	 [weight="0.574515695491"];
+	"Su, Bebek,
+ 2.65" -> "Su, Kelebek,
+ 1.74"	 [weight="0.486813104766"];
+	"Su, Bebek,
+ 2.65" -> "Su, Anne,
+ 0.55"	 [weight="0.512097940582"];
+	"Su, Su,
+ 2.36" -> "Su, Baba,
+ 3.64"	 [weight="1.79644031969"];
+	"Su, Su,
+ 2.36" -> "Su, Araba,
+ 1.81"	 [weight="1.74501821754"];
+	"Su, Su,
+ 2.36" -> "Su, Kitap,
+ 2.28"	 [weight="0.677683182333"];
+	"Su, Su,
+ 2.36" -> "Su, Mama,
+ 3.12"	 [weight="0.644222575205"];
+	"Su, Su,
+ 2.36" -> "Su, Mama,
+ 2.89"	 [weight="2.0001870695"];
+	"Su, Su,
+ 2.36" -> "Su, Mama,
+ 3.9"	 [weight="1.3641914194"];
+	"Su, Su,
+ 2.36" -> "Su, Araba,
+ 0.76"	 [weight="1.76844697629"];
+	"Su, Su,
+ 2.36" -> "Su, Bebek,
+ 1.78"	 [weight="0.679748551777"];
+	"Su, Su,
+ 2.36" -> "Su, Su,
+ 2.42"	 [weight="1.51460067346"];
+	"Su, Su,
+ 2.36" -> "Su, Kelebek,
+ 1.74"	 [weight="1.75630212017"];
+	"Su, Su,
+ 2.36" -> "Su, Araba,
+ 2.49"	 [weight="0.805943811011"];
+	"Su, Kitap,
+ 2.28" -> "Su, Bebek,
+ 0.44"	 [weight="0.478965604502"];
+	"Su, Kitap,
+ 2.28" -> "Su, Kelebek,
+ 0.26"	 [weight="2.2888286619"];
+	"Su, Kitap,
+ 2.28" -> "Su, Bebek,
+ 3.14"	 [weight="0.913860352691"];
+	"Su, Kitap,
+ 2.28" -> "Su, Baba,
+ 1.29"	 [weight="1.12929217463"];
+	"Su, Bebek,
+ 3.14" -> "Su, Bebek,
+ 1.31"	 [weight="1.69131832378"];
+	"Su, Bebek,
+ 3.14" -> "Su, Anne,
+ 1.98"	 [weight="1.42954129799"];
+	"Su, Bebek,
+ 3.14" -> "Su, Araba,
+ 2.49"	 [weight="1.79868539715"];
+	"Su, Bebek,
+ 3.14" -> "Su, Baba,
+ 2.26"	 [weight="1.14405033141"];
+	"Su, Bebek,
+ 3.14" -> "Su, Bebek,
+ 2.65"	 [weight="0.135556642473"];
+	"Su, Kelebek,
+ 1.74" -> "Su, Araba,
+ 1.81"	 [weight="0.470026346989"];
+	"Su, Kelebek,
+ 1.74" -> "Su, Mama,
+ 2.89"	 [weight="0.359242186347"];
+	"Su, Kelebek,
+ 1.74" -> "Su, Mama,
+ 1.86"	 [weight="0.411473234898"];
+	"Su, Kelebek,
+ 1.74" -> "Su, Baba,
+ 2.26"	 [weight="0.494439286774"];
+	"Su, Araba,
+ 2.27" -> "Su, Baba,
+ 3.64"	 [weight="1.39415070216"];
+	"Su, Araba,
+ 2.27" -> "Su, Araba,
+ 1.84"	 [weight="1.30513012951"];
+	"Su, Araba,
+ 2.27" -> "Su, Araba,
+ 1.81"	 [weight="1.00195080508"];
+	"Su, Araba,
+ 2.27" -> "Su, Mama,
+ 1.98"	 [weight="1.41891638509"];
+	"Su, Araba,
+ 2.27" -> "Su, Mama,
+ 2.89"	 [weight="0.995838709513"];
+	"Su, Araba,
+ 2.27" -> "Su, Mama,
+ 1.86"	 [weight="1.0779643792"];
+	"Su, Araba,
+ 2.27" -> "Su, Su,
+ 1.15"	 [weight="1.02473988798"];
+	"Su, Araba,
+ 2.27" -> "Su, Kitap,
+ 3.64"	 [weight="0.815655834902"];
+	"Su, Araba,
+ 2.27" -> "Su, Araba,
+ 2.87"	 [weight="1.08992248354"];
+	"Su, Araba,
+ 2.27" -> "Su, Baba,
+ 2.26"	 [weight="0.589146865464"];
+	"Su, Araba,
+ 2.27" -> "Su, Su,
+ 1.69"	 [weight="1.37291795346"];
+	"Su, Araba,
+ 2.41" -> "Su, Baba,
+ 3.64"	 [weight="0.882405961974"];
+	"Su, Araba,
+ 2.41" -> "Su, Bebek,
+ 0.44"	 [weight="1.68036237536"];
+	"Su, Araba,
+ 2.41" -> "Su, Kitap,
+ 2.28"	 [weight="0.868798448825"];
+	"Su, Araba,
+ 2.41" -> "Su, Bebek,
+ 2.65"	 [weight="0.825901525415"];
+	"Su, Araba,
+ 2.49" -> "Su, Araba,
+ 1.84"	 [weight="0.673521373314"];
+	"Su, Araba,
+ 2.49" -> "Su, Anne,
+ 1.98"	 [weight="0.620511875531"];
+	"Su, Araba,
+ 2.49" -> "Su, Baba,
+ 0.45"	 [weight="0.375324797884"];
+	"Su, Araba,
+ 2.49" -> "Su, Mama,
+ 1.86"	 [weight="0.708503745761"];
+	"Su, Araba,
+ 2.49" -> "Su, Bebek,
+ 1.78"	 [weight="0.41304809562"];
+	"Su, Araba,
+ 2.49" -> "Su, Kelebek,
+ 1.74"	 [weight="2.20704473736"];
+	"Su, Anne,
+ 0.94" -> "Su, Su,
+ 1.69"	 [weight="0.403798817527"];
+	"Su, Anne,
+ 0.55" -> "Su, Bebek,
+ 0.44"	 [weight="0.38848168055"];
+	"Su, Anne,
+ 0.55" -> "Su, Baba,
+ 0.45"	 [weight="0.394497935996"];
+	"Su, Baba,
+ 1.29" -> "Su, Araba,
+ 0.76"	 [weight="1.28741197114"];
+	"Su, Baba,
+ 1.29" -> "Su, Su,
+ 0.81"	 [weight="0.669902106149"];
+	"Su, Araba,
+ 1.33" -> "Su, Bebek,
+ 0.44"	 [weight="0.835119291742"];
+	"Su, Araba,
+ 1.33" -> "Su, Kelebek,
+ 0.26"	 [weight="0.80714103533"];
+	"Su, Araba,
+ 1.33" -> "Su, Araba,
+ 0.76"	 [weight="0.891518850018"];
+	"Su, Araba,
+ 1.33" -> "Su, Mama,
+ 2.9"	 [weight="0.902103016148"];
+	"Su, Araba,
+ 1.33" -> "Su, Kitap,
+ 3.64"	 [weight="0.721644811398"];
+	"Su, Araba,
+ 1.33" -> "Su, Araba,
+ 2.27"	 [weight="0.804353712183"];
+	"Su, Araba,
+ 1.33" -> "Su, Anne,
+ 0.55"	 [weight="0.948957807914"];
+	"Su, Araba,
+ 1.33" -> "Su, Bebek,
+ 2.65"	 [weight="0.878494981451"];
+	"Su, Su,
+ 0.81" -> "Su, Bebek,
+ 3.14"	 [weight="0.213534237408"];
+	"Su, Araba,
+ 1.81" -> "Su, Baba,
+ 0.45"	 [weight="1.82376727181"];
+	"Su, Araba,
+ 1.81" -> "Su, Mama,
+ 0.76"	 [weight="1.91849285661"];
+	"Su, Araba,
+ 1.81" -> "Su, Kelebek,
+ 0.26"	 [weight="0.219587854808"];
+	"Su, Araba,
+ 1.81" -> "Su, Araba,
+ 2.41"	 [weight="1.725216896"];
+	"Su, Araba,
+ 1.81" -> "Su, Su,
+ 1.69"	 [weight="0.249498270804"];
+	"Su, Bebek,
+ 0.44" -> "Su, Kitap,
+ 2.28"	 [weight="0.485007026479"];
+	"Su, Bebek,
+ 0.44" -> "Su, Mama,
+ 2.89"	 [weight="0.387235619225"];
+	"Su, Bebek,
+ 0.44" -> "Su, Kelebek,
+ 0.26"	 [weight="0.433945126029"];
+	"Su, Bebek,
+ 0.44" -> "Su, Mama,
+ 1.86"	 [weight="0.47829206032"];
+	"Su, Bebek,
+ 0.44" -> "Su, Kelebek,
+ 2.57"	 [weight="0.454676389842"];
+	"Su, Anne,
+ 1.98" -> "Su, Bebek,
+ 0.44"	 [weight="0.37553569868"];
+	"Su, Anne,
+ 1.98" -> "Su, Araba,
+ 1.81"	 [weight="0.398852675401"];
+	"Su, Anne,
+ 1.98" -> "Su, Baba,
+ 0.45"	 [weight="0.43984258196"];
+	"Su, Anne,
+ 1.98" -> "Su, Araba,
+ 1.69"	 [weight="1.71054127507"];
+	"Su, Anne,
+ 1.98" -> "Su, Mama,
+ 1.86"	 [weight="1.68681562756"];
+	"Su, Anne,
+ 1.98" -> "Su, Bebek,
+ 1.78"	 [weight="0.418125354476"];
+	"Su, Anne,
+ 1.98" -> "Su, Bebek,
+ 3.14"	 [weight="0.379159324553"];
+	"Su, Anne,
+ 1.98" -> "Su, Kelebek,
+ 1.74"	 [weight="1.46993768408"];
+	"Su, Anne,
+ 1.98" -> "Su, Araba,
+ 2.87"	 [weight="0.445252572095"];
+	"Su, Anne,
+ 1.98" -> "Su, Araba,
+ 2.41"	 [weight="1.39735951093"];
+	"Su, Mama,
+ 2.89" -> "Su, Anne,
+ 1.98"	 [weight="0.568467830998"];
+	"Su, Mama,
+ 2.89" -> "Su, Mama,
+ 1.98"	 [weight="0.597993773568"];
+	"Su, Mama,
+ 2.89" -> "Su, Araba,
+ 0.76"	 [weight="0.540399731842"];
+	"Su, Mama,
+ 2.89" -> "Su, Kelebek,
+ 2.57"	 [weight="2.01349317098"];
+	"Su, Mama,
+ 2.89" -> "Su, Araba,
+ 2.27"	 [weight="2.49960457145"];
+	"Su, Mama,
+ 2.89" -> "Su, Araba,
+ 2.87"	 [weight="0.365263137009"];
+	"Su, Kelebek,
+ 3.12" -> "Su, Araba,
+ 1.81"	 [weight="1.85374992258"];
+	"Su, Kelebek,
+ 3.12" -> "Su, Kitap,
+ 2.28"	 [weight="0.643719071151"];
+	"Su, Kelebek,
+ 3.12" -> "Su, Araba,
+ 1.69"	 [weight="2.89088302602"];
+	"Su, Kelebek,
+ 3.12" -> "Su, Bebek,
+ 4.2"	 [weight="1.43669932503"];
+	"Su, Kelebek,
+ 3.12" -> "Su, Kelebek,
+ 2.57"	 [weight="1.76222102016"];
+	"Su, Kelebek,
+ 3.12" -> "Su, Bebek,
+ 1.78"	 [weight="0.986923631132"];
+	"Su, Kelebek,
+ 3.12" -> "Su, Mama,
+ 2.9"	 [weight="1.12317400629"];
+	"Su, Kelebek,
+ 3.12" -> "Su, Kitap,
+ 3.64"	 [weight="1.89814986963"];
+	"Su, Kelebek,
+ 3.12" -> "Su, Anne,
+ 0.94"	 [weight="2.9004795573"];
+	"Su, Kelebek,
+ 3.12" -> "Su, Baba,
+ 2.26"	 [weight="1.68411832617"];
+	"Su, Su,
+ 1.32" -> "Su, Araba,
+ 1.81"	 [weight="0.418742013401"];
+	"Su, Su,
+ 1.32" -> "Su, Mama,
+ 0.76"	 [weight="0.601851926556"];
+	"Su, Su,
+ 1.32" -> "Su, Mama,
+ 3.9"	 [weight="0.61365347406"];
+	"Su, Araba,
+ 0.76" -> "Su, Bebek,
+ 1.31"	 [weight="0.559002780109"];
+	"Su, Araba,
+ 0.76" -> "Su, Bebek,
+ 0.44"	 [weight="0.632396023652"];
+	"Su, Araba,
+ 0.76" -> "Su, Kitap,
+ 3.64"	 [weight="0.527663875259"];
+	"Su, Araba,
+ 0.76" -> "Su, Araba,
+ 2.49"	 [weight="0.548012878537"];
+	"Su, Araba,
+ 0.76" -> "Su, Su,
+ 1.69"	 [weight="0.441886692053"];
+	"Su, Araba,
+ 0.76" -> "Su, Bebek,
+ 2.65"	 [weight="0.62115917102"];
+}

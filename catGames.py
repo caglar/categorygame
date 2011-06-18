@@ -5,6 +5,10 @@ import pylab
 from matplotlib.colors import colorConverter
 import random
 import numpy as np
+import networkx as nx
+import matplotlib.pyplot as plt
+import nx_vtk
+import math
 
 def transposed(lists):
     if not lists: return []
@@ -107,11 +111,31 @@ class BeliefUpdater:
             else:
                 BeliefUpdater._updateFail (agent2, agent2)
 
+class ScalingFunc:
+    @staticmethod
+    def scale (sFun, belief):
+        if sFun == None:
+            return belief
+        elif sFun == "tanh":
+            return ScalingFunc._tanhFunc(belief)
+        elif sFun == "logistic":
+            return ScalingFunc._logisticFunc(belief)
+
+    @staticmethod
+    def _logisticFunc(belief):
+        return (1 / (1 + math.exp(-belief)))
+
+    @staticmethod
+    def _tanhFunc(belief):
+        print math.tanh(belief)
+        return math.tanh(belief)
+
 class Agent:
 
     _Role = 0 # 1 if teacher
     _CurrentWord = ""
     _Belief = 0.0
+    _Name = ""
 
     def setRole (self, role):
         self._Role = role
@@ -119,8 +143,8 @@ class Agent:
     def getRole (self):
         return self._Role
 
-    def setBelief (self, belief):
-        self._Belief = belief
+    def setBelief (self, belief, scalingFunc=None):
+        self._Belief = ScalingFunc.scale(scalingFunc, belief)
 
     def getBelief (self):
         return self._Belief
@@ -137,7 +161,16 @@ class Agent:
     def speak (self):
         return self._CurrentWord
 
-class Sim:
+    def getName(self):
+        return self._Name
+
+    def setName(self, name):
+        self._Name = name
+
+    def __str__(self):
+        return self._CurrentWord + ", " + self._Name + ",\n " + str(round(self._Belief, 2))
+
+class CGame:
 
     _Lexicon = []
     _Agents = []
@@ -152,6 +185,7 @@ class Sim:
     _Categories = []
     _Fails = []
     _Successes = []
+    _Network = nx.DiGraph()
 
     def setMaxDictSize(self, maxDict):
         self._MaxDict = maxDict
@@ -180,17 +214,29 @@ class Sim:
         rnd_val = random.randint(0, l-1)
         return self._Agents[rnd_val]
 
-    def initAgents (self, noOfAgents=0):
+    def initAgents (self, noOfAgents=0, scalingFunc = None):
+        if scalingFunc == 0:
+            strScalingFunc = None
+        elif scalingFunc == 1:
+            strScalingFunc = "logistic"
+        elif scalingFunc == 2:
+            strScalingFunc = "tanh"
+
+        if (self._Network == None):
+            self._Network = nx.Graph()
+
         if (noOfAgents):
-           self._NoOfAgents = noOfObjects
+           self._NoOfAgents = noOfAgents
         for i in range (self._NoOfAgents):
             ag = Agent()
             rnd_word = self.chooseRandomWord()
             belief = random.uniform(0.05, 1)
-            print rnd_word + str (belief)
-            ag.setCurrentWord (rnd_word)
-            ag.setBelief (belief)
-            self._Agents.append (ag)
+           # print rnd_word + str(belief)
+            ag.setCurrentWord(rnd_word)
+            ag.setBelief(belief, strScalingFunc)
+            ag.setName(rnd_word)
+            self._Network.add_node(ag)
+            self._Agents.append(ag)
 
     def _initMap (self):
         for i in range (self._NoOfAgents):
@@ -200,6 +246,7 @@ class Sim:
                 self._Map[word] += 1
             else:
                 self._Map[word] = 1
+
     def getConvergedWord(self):
         return self._Map.keys()[0]
 
@@ -230,7 +277,7 @@ class Sim:
     def getCategories(self):
         return self._Categories
 
-    def playGames (self):
+    def playGames (self, drawFlag = 0):
            l = len (self._Agents)
            self._initMap()
            is_success = 0
@@ -245,12 +292,15 @@ class Sim:
                 agent2 = self.getRandomAgent()
 
             if (agent1.getBelief() > agent2.getBelief()):
+                self._Network.add_edge(agent1, agent2, weight=agent1.getBelief())
                 agent1.setRole(1)
                 agent2.setRole(0)
             elif (agent2.getBelief() > agent1.getBelief()):
+                self._Network.add_edge(agent2, agent1, weight=agent2.getBelief())
                 agent1.setRole(0)
                 agent2.setRole(1)
             else:
+                self._Network.add_edge(agent1, agent2, weight=agent1.getBelief())
                 agent1.setRole(1)
                 agent2.setRole(1)
 
@@ -287,6 +337,14 @@ class Sim:
            self._Categories.append(1)
            for agent in self._Agents:
             print str(agent.getBelief()) + " " + agent.getCurrentWord()
+           if (drawFlag):
+             self.draw()
+
+    def draw(self):
+        pos = nx.random_layout(self._Network, dim=3)
+        nx_vtk.draw_nxvtk(self._Network, pos)
+        nx.write_dot(self._Network, "net.dot")
+        plt.savefig("network.png")
 
 params = {
              'backend': 'ps',
@@ -297,6 +355,18 @@ params = {
              'ytick.labelsize': 8,
              'text.usetex': True,
 }
+
+def getSuccessRates(successes, fails):
+    rates = []
+    for i in range(0, len(successes)):
+        rates.insert(i, successes[i] / (successes[i] + fails[i]))
+    return rates
+
+def getFailRates(successes, fails):
+    rates = []
+    for i in range(0, len(fails)):
+        rates.insert(i, fails[i] / (successes[i] + fails[i]))
+    return rates
 
 def plotBeliefs(beliefs, initialWords, convergedWord, log_scale=0):
     xlen = len(beliefs[0])
@@ -352,18 +422,6 @@ def plotSuccessvsFails(successes, fails, log_scale=0):
     pylab.show()
 
 
-def getSuccessRates(successes, fails):
-    rates = []
-    for i in range(0, len(successes)):
-        rates.insert(i, successes[i] / (successes[i] + fails[i]))
-    return rates
-
-def getFailRates(successes, fails):
-    rates = []
-    for i in range(0, len(fails)):
-        rates.insert(i, fails[i] / (successes[i] + fails[i]))
-    return rates
-
 def plotSuccessRates(successes, fails, log_scale=0):
     xlen = len(successes)
     x = pylab.arange(0, xlen, 1)
@@ -383,8 +441,7 @@ def plotSuccessRates(successes, fails, log_scale=0):
     pylab.show()
 
 def main():
-    cgcrbu = Sim()
-
+    cgcrbu = CGame()
     lex = ["Araba", "Bebek", "Kitap", "Baba", "Anne", "Kelebek", "Su", "Mama",
             "Yemek", "Adda", "Dede", "Puf", "Da", "Sabun", "Tren", "Nine",
             "Bebe", "Gece", "Sabah", "Masa", "Sehpa", "Sopa", "Kolpa", "Dolap",
@@ -405,25 +462,29 @@ def main():
             "Beyaz", "Lacivert", "Beyin", "Zihin", "Aroma", "Zamir", "Fiil",
             "Eylemsi", "Zarf", "Mektup", "Kasa", "Kazan", "Sazan", "Tarzan",
             "Hazan", "Murat", "Can", "Cem", "Cam", "Kan", "Tan", "Yan", "Ban",
-            "Han", "Zan", "An", "Tren", "Yen", "Sen", "Ben", "O", "Bu"
-           ]
+            "Han", "Zan", "An", "Tren", "Yen", "Sen", "Ben", "O", "Bu", "Kaba",
+            "Seda", "Kadir", "Sinkaf", "Arif", "Tarif", "Sahip", "Tayyip",
+            "Rahip", "Cazip", "Katip", "Kamil", "Samil"
+     ]
 
     cgcrbu.setLexicon(lex)
     cgcrbu.setNoOfAgents(20)
-    cgcrbu.setMaxDictSize(20)
-    cgcrbu.initAgents()
-    cgcrbu.playGames()
+    cgcrbu.setMaxDictSize(10)
+    cgcrbu.initAgents(1)
+    cgcrbu.playGames(0)
 
-#    print cgcrbu.getCategories()
+#   print cgcrbu.getCategories()
+
     beliefs = transposed(cgcrbu.getBeliefs())
     initialWords = cgcrbu.getInitialWords()
-    plotBeliefs(beliefs, initialWords, cgcrbu.getConvergedWord(), 1)
-#    print cgcrbu.getSuccesses()
-#    print cgcrbu.getFailures()
+    plotBeliefs(beliefs, initialWords, cgcrbu.getConvergedWord(), 0)
 
-#    plotCategories(cgcrbu.getCategories(), 1)
-#    plotSuccessvsFails(cgcrbu.getSuccesses(), cgcrbu.getFailures(), 1)
-    #plotSuccessRates(cgcrbu.getSuccesses(), cgcrbu.getFailures())
+    print cgcrbu.getSuccesses()
+    print cgcrbu.getFailures()
+    plotCategories(cgcrbu.getCategories(), 0)
+    plotSuccessvsFails(cgcrbu.getSuccesses(), cgcrbu.getFailures(), 0)
+    plotSuccessRates(cgcrbu.getSuccesses(), cgcrbu.getFailures(), 0)
+
     noOfIterations = cgcrbu.getNoOfIterations()
     noOfSuccess = cgcrbu.getNoOfSuccesses()
     noOfFailures = cgcrbu.getNoOfFailures()
@@ -432,4 +493,4 @@ def main():
     print "No of Successes " + str(noOfSuccess)
     print "No of Failures " + str(noOfFailures)
 
-main()
+#main()

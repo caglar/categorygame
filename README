@@ -1,0 +1,6 @@
+Tested on Ubuntu 11.04 and 10.10
+***REQUIRED Packages
+  python-networkx                                     -to create, manipulate and study complex networks
+  python-numpy                                        -Numerical Python adds a fast array facility to the Python language
+  python-vtk                                          -Python bindings for VTK
+  python-qt4                                          -Python bindings for Qt4
