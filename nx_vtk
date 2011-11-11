@@ -16,6 +16,8 @@ import vtk
 from vtk.util.colors import banana, plum
 import networkx
 
+#Modified by Caglar Gulcehre: 10 November 2010
+
 # this is a hack for drawing a network in 3d with vtk
 # perhaps it will inspire someone to submit a polished version?
 # much of the code borrowed from the vtk examples

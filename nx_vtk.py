@@ -18,6 +18,9 @@ from vtk.util.colors import banana, plum
 import networkx
 from vtk import *
 
+#Modified by Caglar Gulcehre: 10 November 2010
+
+
 # this is a hack for drawing a network in 3d with vtk
 # perhaps it will inspire someone to submit a polished version?
 # much of the code borrowed from the vtk examples
@@ -76,7 +79,6 @@ def draw_nxvtk(G, node_pos):
     edgeData = vtk.vtkPolyData()
 
     # Edges
-
     lines = vtk.vtkCellArray()
     i=0
     for e in G.edges_iter():

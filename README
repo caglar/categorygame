@@ -1,3 +1,15 @@
+To run the gui run the following command:
+    python cgame_gui.py
+    or
+    ./cgame_gui.py
+
+If you don't want to use shell you can edit and use the catGames.py
+
+Known Bugs:
+    Issue 1: GUI plots won't draw after you have drawn one plot and try to draw the second one using the GUI. 
+        Cause: Non-blocking matplotlib functions
+        Solution: Use multi-threading/multi-processing
+
 Tested on Ubuntu 11.04 and 10.10
 ***REQUIRED Packages
   python-networkx                                     -to create, manipulate and study complex networks

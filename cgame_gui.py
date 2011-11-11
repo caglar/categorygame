@@ -1,7 +1,11 @@
+#!/usr/bin/env python
+
 from  PyQt4 import QtCore, QtGui
 from cgame_auto import *
 import sys
 from catGames import *
+from pylab_plotter import *
+from multiprocessing import Process
 
 lex = [
 		"Araba", "Bebek", "Kitap", "Baba", "Anne", "Kelebek", "Su", "Mama",
@@ -42,7 +46,6 @@ class MainWindow(QtGui.QMainWindow):
 		QtCore.QObject.connect(self.ui.btnStart, QtCore.SIGNAL('clicked()'), self.start_sim)
 
 	def start_sim(self):
-		self.x = 0
 		#ui.setupUi(MainWindow)
 		cmbGameIdx = self.ui.cmbGameType.currentIndex()
 		cmbPlotIdx = self.ui.cmbPlot.currentIndex()
@@ -51,7 +54,9 @@ class MainWindow(QtGui.QMainWindow):
 		dictSize = self.ui.spBDictSize.value()
 		draw2D = self.ui.chkDraw2D.isChecked()
 		draw3D = self.ui.chkDraw3D.isChecked()
+		loglog = self.ui.chkLoglog.isChecked()
 
+		print beliefIdx
 		cgcrbu = CGame()
 		cgcrbu.setLexicon(lex)
 		cgcrbu.setMaxDictSize(int(dictSize))
@@ -60,17 +65,28 @@ class MainWindow(QtGui.QMainWindow):
 		self.printBasicReport(cgcrbu)
 
 		beliefs = transposed(cgcrbu.getBeliefs())
+		print "Beliefs"
+		print len(beliefs)
 		initialWords = cgcrbu.getInitialWords()
-		self.x += 1
+
+		if (draw2D):
+			cgcrbu.draw(2)
+		if (draw3D):
+			cgcrbu.draw(3)
 
 		if (cmbPlotIdx == 0):
-			plotBeliefs(beliefs, initialWords, cgcrbu.getConvergedWord(), 1)
+			plotBeliefs(beliefs, initialWords, cgcrbu.getConvergedWord(), loglog)
+			#p = Process(target=plotBeliefs, args=(beliefs, initialWords, cgcrbu.getConvergedWord(), loglog))
+			#p.start()
+			#p.join()
 		elif (cmbPlotIdx == 1):
-			plotCategories(cgcrbu.getCategories(), 1)
+			plotCategories(cgcrbu.getCategories(), loglog)
 		elif (cmbPlotIdx == 2):
-			plotSuccessRates(cgcrbu.getSuccesses(), 1)
+			successRates = getSuccessRates(cgcrbu.getSuccesses(), cgcrbu.getFailures())
+			failRates = getFailRates(cgcrbu.getSuccesses(), cgcrbu.getFailures())
+			plotSuccessRates(successRates, failRates, loglog)
 		elif (cmbPlotIdx == 3):
-			plotSuccessvsFails(cgcrbu.getSuccesses(), 1)
+			plotSuccessvsFails(cgcrbu.getSuccesses(), cgcrbu.getFailures(), loglog)
 
 	def printBasicReport(self, cgc):
 		beliefs = transposed(cgc.getBeliefs())
